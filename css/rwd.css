@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* 1480px */
+@media (max-width: 1480px){
+   header{
+      margin: 0 3.5vw;
+   }
+   .con1,.con2 .sec_inner{
+      width: 100%;
+   }
+}
+
+/* 1023px */
+@media (max-width: 1023px){
+   header{height: 80px;}
+   header .logo a span:first-child{
+      font-size: 1.3rem;
+   }
+   header .logo a span:last-child{
+      font-size: 0.5rem;
+   }
+   .menu_container{
+      display: none;
+      position: fixed;
+      top: 0;left: 0;bottom: 0;right: 0;
+      /* inset: 0; */
+      background-color: #fff;
+      z-index: 10;color: #000;
+   }
+   .m_menuBtn.on span{background-color: #000;}
+   #menu{margin-top: 12vh;}
+   #menu > li{
+      display: block;
+   }
+   #menu > li > a{
+      padding: 0;
+      font-size: 4.5vw;
+      line-height: 10vh;
+   }
+   .m_menuBtn{display: block;z-index: 20;}
+   .notice_container{display: none;}
+   .manage_container{right: 50px;}
+   .manage_container a{border: none;font-size: 14px;padding: 5px 10px;}
+
+   .main_txt_container p{
+      font-size: 2.3rem;
+   }
+
+   .sec_title{
+      font-size: 2rem;
+   }
+   .sec_txt{
+      font-size: 0.9rem;
+   }
+   .con1 ul li:not(:first-child){
+      display: block;
+      margin-top: 30px;
+   }
+   
+   .con2 ul{text-align: left;}
+   .con2 ul li{
+      width: 100%;height: auto;
+      padding: 50px 30px;
+   }
+   .con2 ul li:not(:first-child){
+      margin-left: 0;
+      margin-top: 20px;
+   }
+   .con2 ul li .con2_ico{
+      margin-right: 30px;
+      vertical-align: middle;
+   }
+   .con_txt_wrap{
+      display: inline-block;
+      vertical-align: middle;
+   }
+   .con2 ul li h3{margin-top: 0;}
+
+   .con2 .con2_more{
+      position: absolute;
+      width: 100%;height: 100%;
+      top: 0;left: 0;
+   }
+   .con2 .con2_more .more_txt{display: none;}
+   .con2 .con2_more .arrow{
+      display: block;
+      position: absolute;
+      width: 30px;height: 30px;
+      background: url('../media/arrow.svg');
+      right: 30px;top: 50%;
+      transform: translateY(-50%);
+   }
+}
+
+/* 600px */
+@media (max-width: 600px){
+   .main_txt_container p{
+      margin-bottom: 15px;
+   }
+
+   .sec_title{
+      font-size: 1.6rem;
+   }
+   .sec_txt{
+      font-size: 0.7rem;
+   }
+
+   .con2 ul li .con2_ico{
+      width: 44px;height: 44px;
+   }
+   .con2 ul li h3{
+      font-size: 1.3rem;
+   }
+   .con2 ul li p{
+      font-size: 0.8rem;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@font-face {
+   font-family: 'yg-jalnan';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'S-CoreDream';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'S-CoreDream';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'S-CoreDream';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+}
+/* 공통 스타일 */
+.sec_title{
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 3.5rem;
+}
+.sec_txt{
+   text-align: center;
+   font-size: 1.2rem;
+   letter-spacing: -1px;
+}
+
+body{
+   font-family: 'S-CoreDream', sans-serif;
+}
+
+/****** header ********/
+#header_wrap{
+   position: fixed;
+   width: 100%;background-color: transparent;
+   z-index: 5;transition: .5s;
+}
+#header_wrap.scroll{
+   background-color: #fff;
+   box-shadow: 2px 0px 5px rgba(0, 0, 0, .3);
+}
+#header_wrap.scroll header{color: #000;}
+header{
+   color: #fff;
+   margin: 0 5vw;
+   position: relative;
+}
+header .logo{
+   font-family: 'yg-jalnan';
+   position: absolute;
+   top: 50%;left: 0;
+   transform: translateY(-50%);
+
+}
+header .logo a{display: block;}
+header .logo a span{
+   transition: all 300ms;
+   vertical-align: middle;
+}
+header .logo a span:first-child{
+   font-size: 1.6rem;
+}
+header .logo a span:last-child{
+   display: inline-block;
+   font-size: 0.8rem;
+   background-color: #fff;
+   padding: 2px 6px;border-radius: 6px;margin-left: 8px;
+   color: #000;
+}
+#header_wrap.scroll .logo a span:last-child{
+   background-color: #000;
+   color: #fff;
+}
+.m_menuBtn{
+   display: none;
+   position: absolute;
+   top: 50%;right: 0;
+   transform: translateY(-50%);
+   width: 24px;height: 24px;
+}
+.m_menuBtn span{
+   display: block;position: absolute;
+   width: 100%;height: 4px;
+   background-color: #fff;
+}
+#header_wrap.scroll .m_menuBtn span{
+   background-color: #000;
+}
+.m_menuBtn_line1{top: 5px;}
+.m_menuBtn_line2{top: 14px;}
+
+.m_menuBtn.on .m_menuBtn_line1{transform: rotate(45deg);top: 8px;}
+.m_menuBtn.on .m_menuBtn_line2{transform: rotate(-45deg);top: 8px;}
+
+.menu_container{
+   width: 100%;
+   text-align: center;
+   padding: 20px 0;
+}
+#menu{
+   display: inline-block;
+}
+#menu > li{
+   display: inline-block;
+}
+#menu > li > a{
+   display: block;
+   padding: 20px 15px;
+   transition: all .4s;
+}
+#menu > li > a:hover{color: #624dff;}
+
+
+.notice_container{
+   position: absolute;
+   right: 150px;top: 50%;
+   transform: translateY(-50%);
+   font-size: 1.3rem;
+}
+
+.manage_container{
+   position: absolute;
+   right: 0;top: 50%;
+   transform: translateY(-50%);
+}
+.manage_container a{
+   display: block;
+   padding: 10px 15px;
+   border: 1px solid #fff;
+   border-radius: 0;
+   transition: 300ms;
+}
+#header_wrap.scroll .manage_container a{
+   border-color: #000;
+}
+.manage_container a:hover{
+   background-color: #624dff;
+   border-radius: 8px;
+   color: #fff;border-color: #624dff;
+}
+
+/********* main **********/
+main{}
+.main_full{}
+section{}
+
+/************* main visual  */
+.main_visual{
+   width: 100%;height: 100vh;
+   position: relative;
+}
+.main_visual video{
+   width: 100%;height: 100%;
+   object-fit: cover;
+}
+
+.main_txt_container{
+   position: absolute;
+   left: 0;width: 100%;
+   top: 50%;transform: translateY(-50%);
+   text-align: center;
+}
+.main_txt_container p{
+   font-size: 3.5rem;
+   color: #fff;font-weight: 600;
+   margin-bottom: 25px;
+   text-shadow: 0 0 8px rgba(0, 0, 0, .5);
+   transition: .5s;
+}
+.main_txt_container a{
+   display: inline-block;
+   color: #624dff;
+   background-color: #fff;
+   padding: 12px 25px;
+   border-radius: 20px;
+   font-size: 14px;font-weight: 500;
+   box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+   transition: .5s;
+}
+.main_txt_container a:hover{
+   color: #fff;
+   background-color: #624dff;
+}
+
+/********** contents  */
+.con1, .con2 .sec_inner{
+   width: 1480px;margin: 50px auto 30px;
+   padding: 30px;
+}
+
+/*************** con1 */
+.con1{}
+.con1 .sec_img{margin: 25px auto 30px;}
+.con1 .sec_img img{width: 100%;}
+.con1 ul{text-align: center;padding-top: 20px;}
+.con1 ul li{
+   display: inline-block; 
+   margin: 0 20px;
+}
+.con1 ul li strong{
+   display: block;
+   font-size: 1.6rem;
+   line-height: 36px;
+}
+.con1 ul li p{margin-top: 10px;}
+
+/********** con2  */
+.con2{
+   background-color: #F8F8FA;
+   padding: 120px 0;
+}
+.con2 ul{
+   font-size: 0;
+   text-align: center;
+   margin-top: 80px;
+}
+.con2 ul li{
+   display: inline-block;
+   position: relative;
+   width: calc(33.33% - 35px);height: 416px;
+   vertical-align: middle;
+   background-color: #fff;
+   padding: 40px 30px 30px;
+   border-radius: 20px;
+}
+.con2 ul li:not(:first-child){
+   margin-left: 35px;
+}
+.con2 ul li .con2_ico{
+   display: inline-block;
+   width: 88px;height: 88px;
+   background-size: cover;
+}
+.con2 ul li:nth-child(1) .con2_ico{
+   background-image: url('../media/product_icon_item.svg');
+}
+.con2 ul li:nth-child(2) .con2_ico{
+   background-image: url('../media/product_icon_world.svg');
+}
+.con2 ul li:nth-child(3) .con2_ico{
+   background-image: url('../media/product_icon_live.svg');
+}
+.con2 ul li h3{
+   font-size: 1.8rem;
+   margin-top: 30px;
+}
+.con2 ul li p{
+   font-size: 1rem;
+   color: #555;
+   margin-top: 10px;
+}
+.con2 .con2_more{
+   display: block;   
+   font-size: 0.8rem;
+   position: absolute;
+   display: inline-block;
+   bottom: 30px;left: 60px;right: 60px;
+   height: 50px;
+}
+.con2 .con2_more .more_txt{
+   display: block;
+   background-color: #624dff;
+   line-height: 50px;border-radius: 25px;
+   color: #fff;
+}
+.con2 .con2_more .arrow{}
+.con2 .con2_more .arrow span{
+   display: none;
+   font-size: 0;color: transparent;
+}
+

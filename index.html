@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>동영상 배경, 헤더 고정</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/rwd.css">
+   <script src="https://kit.fontawesome.com/54678980ff.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <script defer src="js/main.js"></script>
+</head>
+<body>
+   <div id="header_wrap">
+      <header>
+         <h1 class="logo"><a href="#"><span>ZEPETO</span><span>STUDIO</span></a></h1>
+         <nav class="menu_container">
+            <ul id="menu">
+               <li><a href="#">콘텐츠</a></li>
+               <li><a href="#">크리에이터 프로그램</a></li>
+               <li><a href="#">비지니스</a></li>
+               <li><a href="#">가이드</a></li>
+               <li><a href="#">지원</a></li>
+            </ul>
+         </nav>
+         <div class="notice_container">
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+         </div>
+         <div class="manage_container">
+            <a href="#">콘텐츠 관리</a>
+         </div>
+         <a href="#" class="m_menuBtn">
+            <span class="m_menuBtn_line1"></span>
+            <span class="m_menuBtn_line2"></span>
+         </a>
+      </header>
+   </div>
+   <main>
+      <div class="main_full">
+         <section class="main_visual">
+            <video autoplay loop muted playsinline poster="media/img_creators.png">
+               <!--<source src="media/bg_home_video.webm" type="video/webm"> -->
+               <source src="media/bg_home_video.mp4" type="video/mp4">
+               이 브라우저에서는 동영상 기능을 지원하지 않습니다. 
+            </video>
+            <div class="main_txt_container">
+               <p>상상하는 모든 것.<br>제페토 스튜디오에서.</p>
+               <a href="#">시작하기</a>
+            </div>
+         </section>
+         <section class="con1">
+            <h2 class="sec_title">크리에이터를 위한 제페토.</h2>
+            <p class="sec_txt">제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다.<br>전 세계 3억 유저에게 당신의 아이디어를 보여주세요!</p>
+            <div class="sec_img">
+               <img src="media/img_creators.png" alt="">
+            </div>
+            <ul>
+               <li>
+                  <strong>6800만</strong>
+                  <p>스튜디오 아이템 판매량</p>
+               </li>
+               <li>
+                  <strong>230만</strong>
+                  <p>스튜디오 크리에이터 수</p>
+               </li>
+               <li>
+                  <strong>3억</strong>
+                  <p>제페토 가입자 수</p>
+               </li>
+            </ul>
+         </section>
+         <section class="con2">
+            <div class="sec_inner">
+               <h2 class="sec_title">제페토 세상이 내 손안에.</h2>
+               <p class="sec_txt">아이템, 월드, 라이브까지.<br>제페토는 크리에이터가 아이디어를 펼칠 수 있는 최고의 플랫폼입니다.</p>
+               <ul>
+                  <li>
+                     <span class="con2_ico"></span>
+                     <div class="con_txt_wrap">
+                        <h3>아이템</h3>
+                        <p>패션 아이템을 만들고<br>수익을 창출하세요.</p>
+                     </div>
+                     <a href="#" class="con2_more">
+                        <span class="more_txt">더 알아보기</span>
+                        <span class="arrow"><span>더 알아보기</span></span>
+                     </a>
+                  </li>
+                  <li>
+                     <span class="con2_ico"></span>
+                     <div class="con_txt_wrap">
+                        <h3>월드</h3>
+                        <p>제페토 세상에<br>내 아이디어가 담긴<br>월드를 만드세요.</p>
+                     </div>
+                     <a href="#" class="con2_more">
+                        <span class="more_txt">더 알아보기</span>
+                        <span class="arrow"><span>더 알아보기</span></span>
+                     </a>
+                  </li>
+                  <li>
+                     <span class="con2_ico"></span>
+                     <div class="con_txt_wrap">
+                        <h3>라이브</h3>
+                        <p>전 세계 유저들과<br>실시간 방송하세요.</p>
+                     </div>
+                     <a href="#" class="con2_more">
+                        <span class="more_txt">더 알아보기</span>
+                        <span class="arrow"><span>더 알아보기</span></span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+      </div>
+   </main>
+</body>
+</html>
