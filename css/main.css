@@ -69,6 +69,7 @@ header .logo a span{
 }
 header .logo a span:first-child{
    font-size: 1.6rem;
+   display: inline-block;
 }
 header .logo a span:last-child{
    display: inline-block;
