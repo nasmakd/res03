@@ -194,9 +194,10 @@ section{}
 
 /********** contents  */
 .con1, .con2 .sec_inner{
-   width: 1480px;margin: 50px auto 30px;
-   padding: 30px;
+   width: 1480px;margin: 0 auto;
+   padding: 80px 30px;
 }
+
 
 /*************** con1 */
 .con1{}
@@ -217,7 +218,6 @@ section{}
 /********** con2  */
 .con2{
    background-color: #F8F8FA;
-   padding: 120px 0;
 }
 .con2 ul{
    font-size: 0;
