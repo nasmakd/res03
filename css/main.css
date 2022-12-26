@@ -24,12 +24,12 @@
    font-style: normal;
 }
 /* 공통 스타일 */
-.sec_title{
+.con_title{
    text-align: center;
    margin-bottom: 20px;
    font-size: 3.5rem;
 }
-.sec_txt{
+.con_txt{
    text-align: center;
    font-size: 1.2rem;
    letter-spacing: -1px;
@@ -152,12 +152,12 @@ header .logo a span:last-child{
    border-color: #624dff !important;
 }
 
-/********* main **********/
+/* main */
 main{}
 .main_full{}
 section{}
 
-/************* main visual  */
+/* main visual  */
 .main_visual{
    width: 100%;height: 100vh;
    position: relative;
@@ -195,14 +195,14 @@ section{}
    background-color: #624dff !important;
 }
 
-/********** contents  */
-.con1, .con2 .sec_inner{
+/* contents  */
+.con1, .con_inner{
    width: 1480px;margin: 0 auto;
    padding: 80px 30px;
 }
 
 
-/*************** con1 */
+/* con1 */
 .con1{}
 .con1 .sec_img{margin: 25px auto 30px;}
 .con1 .sec_img img{width: 100%;}
@@ -218,7 +218,7 @@ section{}
 }
 .con1 ul li p{margin-top: 10px;}
 
-/********** con2  */
+/* con2  */
 .con2{
    background-color: #F8F8FA;
 }
@@ -282,3 +282,130 @@ section{}
    font-size: 0;color: transparent;
 }
 
+
+/******* con3  */
+.con3 .con_inner{
+   width: 1600px;
+   padding-left: 0;padding-right: 0;
+}
+.slide_wrap{
+   margin-top: 30px;
+   text-align: center;
+}
+
+.slide_img_wrap{
+   margin: 36px 36px 36px 28px;
+}
+.swiper-slide-next + .swiper-slide .slide_img_wrap img{
+   transform: scale(1.2);
+}
+.sldie_img_box img{
+   width: 100%;
+   max-width: 352px;
+   min-width: 200px;
+   transition: all .5s;
+}
+
+.slide_txt_box{padding-top: 20px;}
+.swiper-slide-next + .swiper-slide .slide_txt_box span{opacity: 1;}
+.slide_txt_box span{opacity: 0;text-align: center; display: block;}
+.slide_txt_box span:nth-child(1){font-size: 24px;font-weight: 700;}
+.slide_txt_box span:nth-child(2){color: #555;}
+
+/* con4  */
+.con4{background-color: #F8F8FA;}
+.con4 .con_inner{padding-bottom: 0;width: 100%;}
+.con4_video_wrap{
+   max-width: 1184px;
+   margin: 0 auto;
+   font-size: 0;
+}
+.con4_video_wrap video{
+   width: 100%;
+   height: auto;
+}
+
+/* con5  */
+.con5{text-align: center;}
+.con5 .cre_start{
+   display: inline-block;
+   text-align: center;
+   background-color: #624dff;
+   color: #fff;
+   height: 56px;line-height: 56px;
+   padding: 0 35px;
+   font-weight: 500;
+   border-radius: 28px;
+   margin-top: 40px;
+}
+.create_step_box{
+   background-color: #F8F8FA;
+   max-width: 1184px;margin: 0 auto;
+   margin-top: 80px;padding: 56px 48px;
+   border-radius: 16px;
+   display: flex;
+   justify-content: space-between;
+}
+.create_step_box > div{
+   width: calc(33.33% - 55px);
+   position: relative;
+}
+.create_step_box > div:not(:last-child)::after{
+   content: "";
+   display: block;
+   width: 28px;height: 28px;
+   background: url("../media/arrow.svg");
+   position: absolute;right: -55px;top: 50%;
+   transform: translateY(-50%);
+}
+.create_step_box > div strong{
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+footer{
+   border-top: 1px solid #eee;
+   padding: 60px 20px;
+   display: flex;
+}
+.footer_menu {
+   width: 70%;
+}
+.footer_menu > ul{
+   display: flex;
+}
+.footer_menu > ul > li{
+   padding: 0 30px;
+}
+.footer_menu > ul > li h4{
+   padding: 10px 0;
+}
+
+.appStoreLink{
+   width: 30%;
+
+}
+.appStoreLink .appBtns{
+   display: flex; 
+}
+.appStoreLink .appBtns a{
+   display: flex;
+   width: 160px;height: 60px;
+   border: 1px solid #ccc;
+   justify-content: center;
+   align-items: center;
+   margin-right: 16px;
+   font-size: 14px;
+   font-weight: bold;padding-left: 20px;
+   background: no-repeat 20px center;
+   border-radius: 8px;
+}
+.appStoreLink .appBtns a:first-child{
+   background-image: url('https://studio.zepeto.me/img/img_24_googleplay.svg');
+}
+.appStoreLink .appBtns a:last-child{
+   background-image: url('https://studio.zepeto.me/img/img_24_appstore.svg');
+}
+.appStoreLink .mobile_app_link{
+   display: none;
+}

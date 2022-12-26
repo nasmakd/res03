@@ -7,6 +7,9 @@ $(window).scroll(function(){
    }
 });
 // scrollTop() - 스크롤바의 위치를 알아오거나 정함
+if(!$(window).scrollTop() == 0){
+   $('#header_wrap').addClass('scroll');
+}
 
 
 // 모바일 상태에서 햄버거 버튼을 누르면 메뉴가 보인다
@@ -28,3 +31,12 @@ $(window).resize(function(){
       $('.menu_container').removeAttr('style');
    }
 });
+
+$(".footer_menu h4").click(function(){
+   $(this).toggleClass("on");
+   if($(this).hasClass("on")){
+      $(this).parent().find(".footer_sub").slideDown();
+   }else{
+      $(this).parent().find(".footer_sub").slideUp();
+   }
+})
